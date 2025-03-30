@@ -124,3 +124,24 @@ legend.onAdd = function() {
 };
 
 legend.addTo(map);
+
+// =============================
+// 7. Add Title to the Map (Top Center)
+// =============================
+let title = L.control({ position: "topright" }); // Add title control
+
+title.onAdd = function () {
+    let div = L.DomUtil.create("div", "map-title");
+    div.innerHTML = "<h1 style='font-size: 25px; margin: 0; padding: 5px;  color: black;'>LIVE EARTHQUAKES</h1>";
+    div.style.position = "absolute"; // Absolute positioning
+    div.style.top = "-5px"; // Set distance from the top
+    div.style.left = "-175%"; // Center horizontally
+    div.style.transform = "translateX(-245%)"; // Ensure proper alignment
+    div.style.textAlign = "center"; // Center the text within the element
+    div.style.zIndex = "1000"; // Bring title to the front
+    return div;
+};
+
+// Add title control to the map
+title.addTo(map);
+
