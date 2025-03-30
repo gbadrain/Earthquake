@@ -1,0 +1,17 @@
+.info.legend {
+  padding: 6px 8px;
+  font: 14px Arial, sans-serif;
+  background: white;
+  line-height: 18px;
+  color: #333;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.info.legend i {
+  width: 18px; /* Width of color boxes */
+  height: 18px; /* Height of color boxes */
+  float: left; /* Align boxes to the left */
+  margin-right: 8px; /* Space between box and text */
+  opacity: 0.8; /* Slight transparency for better appearance */
+  background-color: transparent; /* Will be overwritten dynamically */
+}
