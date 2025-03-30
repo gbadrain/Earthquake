@@ -1,0 +1,2 @@
+# Earthquake
+HTML and Javascript
